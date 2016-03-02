@@ -1,2 +1,2 @@
-# Ssainsburys
+# Sainsburys
 Repository for Sainsbury's 
