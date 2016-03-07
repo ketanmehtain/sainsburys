@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf'
+gem 'chefspec'
+gem 'foodcritic'
+gem 'robocop'
+
+group :integration do |variable|
+	gem 'test-kitchen'
+	gem 'kitchen-vagrant'
+end

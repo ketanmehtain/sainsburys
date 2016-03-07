@@ -1,0 +1,28 @@
+server {
+    listen 8484;
+    server_name app1;
+    location / {
+        proxy_pass http://app1;
+    }
+}
+ 
+server {
+    listen 8484;
+    server_name app2;
+    location / {
+        proxy_pass http://app2;
+    }
+}
+ 
+upstream lb1 {
+    server app1:8484;
+    server app2:8484;
+}
+ 
+server {
+    listen       80;
+    location / {
+        proxy_buffering off;
+        proxy_pass  http://lb1;
+        }
+}
