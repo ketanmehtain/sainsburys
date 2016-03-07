@@ -11,7 +11,7 @@ This project demonstrates how to setup a simple multi-vm environment in Vagrant 
 
 ### <a name="requirements-platform"></a> Platform
 
-* CentOS6.7
+* CentOS-6.5
 
 ### <a name="requirements-tools"></a> Tools
 
