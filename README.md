@@ -44,5 +44,11 @@ Once all the vagrant box are created and provision is over update your /etc/host
 
 Now hit this url on your browser :  http://lb1.example.com
 
+## <a name="testing"></a> Testing
+
+This project have [serverspec](http://serverspec.org) for syntax checking and
+[test-kitchen](https://github.com/opscode/test-kitchen) for integration testing. You can run the test suite by
+typing: `bundle exec kitchen test` (may be slow for the first time).
+
 Please email me on ketanmehta.in@gmail.com 
 
